@@ -10,6 +10,7 @@
 "./8.6/Dockerfile"
 "./LICENSE"
 "./README.md"
+"./docker-compose.yml"
 "./examples/7.10/snap/.dockerignore"
 "./examples/7.10/snap/.ghci"
 "./examples/7.10/snap/Dockerfile"
