@@ -1,6 +1,4 @@
 #!/bin/bash -
 
-while true
-do
-    ping mini
-done
+ghc -o hello hello.hs
+./hello
