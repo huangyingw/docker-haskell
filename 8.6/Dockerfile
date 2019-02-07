@@ -23,4 +23,7 @@ RUN rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
 ENV PATH /root/.cabal/bin:/root/.local/bin:/opt/cabal/2.4/bin:/opt/ghc/8.6.3/bin:$PATH
 
 ## run ghci by default unless a command is specified
-CMD ["ghci"]
+
+#CMD ["ghci"]
+COPY ./entrypoint.sh /entrypoint.sh
+CMD ["/bin/sh", "-c", "/entrypoint.sh 2>&1 | tee /var/logs/containner.log"]

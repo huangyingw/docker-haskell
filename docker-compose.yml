@@ -6,7 +6,6 @@ services:
             dockerfile: Dockerfile
         image: huangyingw/dhaskell
         volumes:
-            - ./.bashrc:/root/.bashrc
             - ./var/logs/:/var/logs/
             - ~/loadrc/:/root/loadrc/
             - ~/.ssh/:/root/.ssh/
