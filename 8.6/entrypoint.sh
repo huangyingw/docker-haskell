@@ -1,4 +1,4 @@
 #!/bin/bash -
 
-ghc -o hello hello.hs
+ghc --make hello.hs
 ./hello
